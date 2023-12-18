@@ -1,0 +1,334 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <!-- <div class="mainDiv">
+        <div class="formDiv">
+            <div class="headingDiv">
+                <div class="border1"></div>
+                <h3>Bundle & Save</h3>
+                <div class="border2"></div>
+            </div>
+            <div class="radioMain">
+                <input type="radio" id="control_01" name="select" value="1" checked>
+                <label for="control_01" class="radioContent">
+                    <div class="">
+                        <p>1 Pair</p>
+                        <h5>DKK 195.00</h5>
+                    </div>
+                    <div class="offerDiv">
+                        <h5>50% off</h5>
+                    </div>
+                </label>
+            </div>
+            <div class="radioMain">
+                <input type="radio" id="control_01" name="select" value="1">
+                <label for="control_01" class="mainMostProular">
+                    <div class="radioContent2" style="width: 100%;">
+                        <div class="">
+                            <p>2 Pair</p>
+                            <div class="mostProp"
+                                style="width: 100%; gap: 80px; display: flex; justify-content: space-between">
+                                <h5>DKK 345.00</h5>
+                                <p>DKK 195.00</p>
+                            </div>
+
+                        </div>
+                        <div class="offerDiv">
+                            <h3>Most Popular</h3>
+                            <h5>40% off</h5>
+                        </div>
+                    </div>
+                    <div class="selectBox" id="selectBox1">
+                        <p>#1</p>
+                        <select>
+                            <option value="1">Male</option>
+                            <option value="2">Female</option>
+                        </select>
+                        <select>
+                            <option value="1">red</option>
+                            <option value="2">green</option>
+                        </select>
+                    </div>
+                    <div class="selectBox" id="">
+                        <p>#2</p>
+                        <select>
+                            <option value="1">Male</option>
+                            <option value="2">Female</option>
+                        </select>
+                        <select>
+                            <option value="1">red</option>
+                            <option value="2">green</option>
+                        </select>
+                    </div>
+                </label>
+
+            </div>
+            <div class="radioMain">
+                <input type="radio" id="control_03" name="select" value="3">
+                <label for="control_03" class="radioContent">
+                    <div class="">
+                        <p>3 Pair</p>
+                        <h5>DKK 528.00</h5>
+                    </div>
+                    <div class="offerDiv">
+                        <h5>60% off</h5>
+                    </div>
+                </label>
+            </div>
+        </div>
+    </div> -->
+    <div class="mainDiv">
+        <div class="formDiv">
+            <div class="headingDiv">
+                <div class="border1"></div>
+                <h3>Bundle & Save</h3>
+                <div class="border2"></div>
+            </div>
+            <div class="radioMain">
+                <input type="radio" id="control_01" name="select" value="1" checked
+                    onclick="toggleSelectBox('selectBox1')" style="accent-color: #007F61;">
+                <label for="control_01" class="mainMostProular">
+                    <div class="radioContent2" style="width: 100%;">
+                        <div class="" style="display: flex; flex-direction: column; gap: 10px;">
+                            <p>1 Pair</p>
+                            <h5>DKK 195.00</h5>
+                        </div>
+                        <div class="offerDiv">
+                            <h5>50% off</h5>
+                        </div>
+                    </div>
+                    <div class="selectBox" style="display: none;" id="selectBox1">
+                        <div class="insideSelectBox">
+                            <p>#1</p>
+                            <select>
+                                <option value="1">Male</option>
+                                <option value="2">Female</option>
+                            </select>
+                            <select>
+                                <option value="1">red</option>
+                                <option value="2">green</option>
+                            </select>
+                        </div>
+                        <div class="insideSelectBox">
+                            <p>#2</p>
+                            <select>
+                                <option value="1">Male</option>
+                                <option value="2">Female</option>
+                            </select>
+                            <select>
+                                <option value="1">red</option>
+                                <option value="2">green</option>
+                            </select>
+                        </div>
+                    </div>
+
+                </label>
+            </div>
+            <div class="radioMain">
+                <input type="radio" id="control_02" name="select" value="2" onclick="toggleSelectBox('selectBox2')"
+                    style="accent-color: #007F61;">
+                <label for="control_02" class="mainMostProular">
+                    <div class="radioContent2" style="width: 100%;">
+                        <div class="" style="display: flex; flex-direction: column; gap: 10px;">
+                            <p>2 Pair</p>
+                            <div class="mostProp"
+                                style="width: 100%; gap: 80px; display: flex; justify-content: space-between">
+                                <h5>DKK 345.00</h5>
+                                <p>DKK 195.00</p>
+                            </div>
+
+                        </div>
+                        <div class="offerDiv">
+                            <h3>Most Popular</h3>
+                            <h5 style="text-align: end;">40% off</h5>
+                        </div>
+                    </div>
+                    <div class="selectBox" style="display: none;" id="selectBox2">
+                        <div class="insideSelectBox">
+                            <p>#1</p>
+                            <select>
+                                <option value="1">Male</option>
+                                <option value="2">Female</option>
+                            </select>
+                            <select>
+                                <option value="1">red</option>
+                                <option value="2">green</option>
+                            </select>
+                        </div>
+                        <div class="insideSelectBox">
+                            <p>#2</p>
+                            <select>
+                                <option value="1">Male</option>
+                                <option value="2">Female</option>
+                            </select>
+                            <select>
+                                <option value="1">red</option>
+                                <option value="2">green</option>
+                            </select>
+                        </div>
+                    </div>
+
+                </label>
+
+            </div>
+            <div class="radioMain">
+                <input type="radio" id="control_03" name="select" value="3" onclick="toggleSelectBox('selectBox3')"
+                    style="accent-color: #007F61;">
+                <label for="control_03" class="mainMostProular">
+                    <div class="radioContent2" style="width: 100%;">
+                        <div class="" style="display: flex; flex-direction: column; gap: 10px;">
+                            <p>3 Pair</p>
+                            <h5>DKK 528.00</h5>
+                        </div>
+                        <div class="offerDiv">
+                            <h5>60% off</h5>
+                        </div>
+                    </div>
+                    <div class="selectBox" style="display: none;" id="selectBox3">
+                        <div class="insideSelectBox">
+                            <p>#1</p>
+                            <select>
+                                <option value="1">Male</option>
+                                <option value="2">Female</option>
+                            </select>
+                            <select>
+                                <option value="1">red</option>
+                                <option value="2">green</option>
+                            </select>
+                        </div>
+                        <div class="insideSelectBox">
+                            <p>#2</p>
+                            <select>
+                                <option value="1">Male</option>
+                                <option value="2">Female</option>
+                            </select>
+                            <select>
+                                <option value="1">red</option>
+                                <option value="2">green</option>
+                            </select>
+                        </div>
+                    </div>
+
+                </label>
+
+            </div>
+            <div class="bootomPart">
+                <p>Free 2 Day Shipping</p>
+                <h6>Total : DKK 360.00</h6>
+            </div>
+            <div class="addtoCart">
+                <button>+ Add to Cart</button>
+            </div>
+            <div class="copyRight">
+                <p>@Powered by Pumper</p>
+            </div>
+        </div>
+    </div>
+</body>
+<!-- <script>
+    document.addEventListener('DOMContentLoaded', function () {
+        const radioButtons = document.querySelectorAll('input[name="select"]');
+
+        function toggleSelectBox(selectBoxId) {
+            const allSelectBoxes = document.querySelectorAll('.selectBox');
+            allSelectBoxes.forEach(function (box) {
+                box.style.display = "none";
+            });
+
+            const selectBox = document.getElementById(selectBoxId);
+            if (selectBox) {
+                selectBox.style.display = "block";
+            }
+        }
+
+        function handleRadioButtonChange(radioButton) {
+            // Remove 'radioChecked' class from all .radioMain divs
+            document.querySelectorAll('.radioMain').forEach(div => {
+                div.classList.remove('radioChecked');
+            });
+
+            // Add 'radioChecked' class to the parent .radioMain div of the checked radio button
+            if (radioButton.checked) {
+                radioButton.closest('.radioMain').classList.add('radioChecked');
+            }
+
+            // Toggle the corresponding select box
+            toggleSelectBox('selectBox' + radioButton.value);
+        }
+
+        radioButtons.forEach(radioButton => {
+            radioButton.addEventListener('change', function () {
+                handleRadioButtonChange(this);
+            });
+        });
+
+        // Show the select box corresponding to the initially checked radio button
+        const initiallyChecked = document.querySelector('input[name="select"]:checked');
+        if (initiallyChecked) {
+            handleRadioButtonChange(initiallyChecked);
+        }
+    });
+</script> -->
+
+<script>
+    document.addEventListener('DOMContentLoaded', function () {
+        const radioButtons = document.querySelectorAll('input[name="select"]');
+
+        function toggleSelectBox(selectBoxId) {
+            const allSelectBoxes = document.querySelectorAll('.selectBox');
+            allSelectBoxes.forEach(function (box) {
+                box.style.display = "none";
+            });
+
+            const selectBox = document.getElementById(selectBoxId);
+            if (selectBox) {
+                selectBox.style.display = "block";
+            }
+        }
+
+        function handleRadioButtonChange(radioButton) {
+            // Remove 'radioChecked' class from all .radioMain divs
+            document.querySelectorAll('.radioMain').forEach(div => {
+                div.classList.remove('radioChecked');
+                div.style.alignItems = ""; // Reset align-items property
+            });
+
+            // Add 'radioChecked' class to the parent .radioMain div of the checked radio button
+            if (radioButton.checked) {
+                const radioMainDiv = radioButton.closest('.radioMain');
+                radioMainDiv.classList.add('radioChecked');
+                radioMainDiv.style.alignItems = "start"; // Apply align-items: start
+            }
+
+            // Toggle the corresponding select box
+            toggleSelectBox('selectBox' + radioButton.value);
+        }
+
+        radioButtons.forEach(radioButton => {
+            radioButton.addEventListener('change', function () {
+                handleRadioButtonChange(this);
+            });
+        });
+
+        // Show the select box corresponding to the initially checked radio button
+        const initiallyChecked = document.querySelector('input[name="select"]:checked');
+        if (initiallyChecked) {
+            handleRadioButtonChange(initiallyChecked);
+        }
+    });
+</script>
+
+
+
+</html>

@@ -1,0 +1,423 @@
+@font-face {
+    font-family: Metropolis;
+    src: url('../fonts/Metropolis-Regular.otf');
+}
+
+h1,
+h2,
+h3,
+h4,
+h5 {
+    margin: 0px;
+    padding: 0px;
+}
+
+p {
+    margin: 0px;
+    padding: 0px;
+}
+
+.mainDiv {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    /* width: 100%; */
+
+}
+
+.formDiv {
+    /* border: 1px solid black; */
+    width: 25%;
+    padding: 20px 15px;
+}
+
+.headingDiv {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    /* gap: 10px; */
+    justify-content: center;
+    margin: 20px 0px;
+    /* width: 100%; */
+}
+
+
+label {
+    width: 100%;
+}
+
+.offerDiv {
+    display: flex;
+    flex-direction: column;
+}
+
+.offerDiv h3 {
+    color: #007F61;
+    font-size: 13px;
+    font-weight: 800;
+    margin: 0px;
+}
+
+.offerDiv h5 {
+    margin: 0px 0px !important;
+}
+
+.mostProp p {
+    color: #9F9F9F !important;
+    text-decoration: line-through !important;
+    margin: 0px 0px !important;
+}
+
+.mainMostProular {
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: start;
+    /* gap: 10px; */
+    /* margin-bottom: 15px; */
+}
+
+.mostProp h5 {
+    margin: 0px 0px !important;
+}
+
+.headingDiv h3 {
+    color: #007F61;
+    font-weight: 900;
+    font-size: 18px;
+    font-style: normal;
+    margin-left: 5px;
+    margin-right: 5px;
+}
+
+.border1 {
+    height: 1px;
+    width: 35%;
+    background: #C8C8C8;
+}
+
+.border2 {
+    height: 1px;
+    width: 35%;
+    background: #C8C8C8;
+}
+
+form {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+/* radio button css start */
+input[type="radio"]:not(:disabled)~label {
+    cursor: pointer;
+}
+
+input[type="radio"] {
+    width: 15px;
+    height: 15px;
+}
+
+input[type="radio"]:disabled~label {
+    color: hsla(150, 5%, 75%, 1);
+    border-color: hsla(150, 5%, 75%, 1);
+    box-shadow: none;
+    cursor: not-allowed;
+}
+
+.radioMain {
+    display: flex;
+    gap: 10px;
+    padding: 15px 20px;
+    align-items: center;
+    /* justify-content: center; */
+    background: white;
+    border: 0.904px solid #C8C8C8;
+    border-radius: 3.615px;
+    margin-bottom: 1rem;
+    text-align: center;
+    box-shadow: 0px 3px 10px -2px hsla(150, 5%, 65%, 0.5);
+    position: relative;
+}
+
+.radioMain.checked {
+    align-items: start;
+    /* padding-top: 20px; Adjust the padding value as needed */
+}
+
+.radioMain2 {
+    display: flex;
+    width: 100%;
+    gap: 10px;
+    align-items: start;
+    border: 0.904px solid #C8C8C8;
+
+}
+
+input[type="radio"]:checked+label {
+    background: #F4FBF9;
+    color: black;
+}
+
+/* Style for the entire .radioMain div when radio is checked */
+.radioChecked {
+    background-color: #F4FBF9;
+}
+
+/* Style for the entire .radioMain div when radio is checked */
+.radioMain input[type="radio"]:checked {
+    /* Change background color of .radioMain when radio is checked */
+    background-color: red;
+}
+
+input[type="radio"]:checked+label {
+    background: #F4FBF9;
+    color: black;
+}
+
+input[type="radio"]:checked+label::after {
+    color: hsla(215, 5%, 25%, 1);
+    font-family: Metropolis;
+    border: 2px solid hsla(150, 75%, 45%, 1);
+    content: "\f00c";
+    font-size: 24px;
+    position: absolute;
+    top: -25px;
+    left: 50%;
+    transform: translateX(-50%);
+    height: 50px;
+    width: 50px;
+    line-height: 50px;
+    text-align: center;
+    border-radius: 50%;
+    background: white;
+    box-shadow: 0px 2px 5px -2px hsla(0, 0%, 0%, 0.25);
+    display: none
+}
+
+input[type="radio"]#control_05:checked+label {
+    background: red;
+    border-color: red;
+}
+
+p {
+    font-weight: 900;
+}
+
+@media only screen and (max-width: 700px) {
+    section {
+        flex-direction: column;
+    }
+}
+
+.radioContent {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    align-items: center;
+    padding-left: 10px;
+}
+
+.radioContent2 {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    padding-left: 10px;
+    align-items: center;
+}
+
+
+.radioContent2 p {
+    font-size: 15px;
+    font-weight: 400;
+    font-style: normal;
+    text-align: start;
+    /* padding-bottom: 5%; */
+    /* margin: 15px 0px; */
+    font-family: Metropolis;
+}
+
+.radioContent2 h5 {
+    font-size: 15px;
+    font-weight: bold;
+    font-style: normal;
+    /* padding-bottom: 5%; */
+    text-align: start;
+    /* margin: 15px 0px; */
+    font-family: Metropolis;
+}
+
+.radioContent p {
+    font-size: 15px;
+    font-weight: 400;
+    font-style: normal;
+    /* text-align: start; */
+    padding-bottom: 5%;
+    /* margin: 15px 0px; */
+    font-family: Metropolis;
+
+}
+
+.radioContent h5 {
+    font-size: 15px;
+    font-weight: bold;
+    font-style: normal;
+    text-align: start;
+    /* padding-bottom: 5%; */
+    /* margin: 15px 0px; */
+    font-family: Metropolis;
+}
+
+.selectBox {
+    display: flex;
+    gap: 5px;
+    align-items: center;
+
+}
+
+select {
+    padding: 5px 10px;
+    border: 0.904px solid #D9D9D9;
+    border-radius: 2px;
+}
+
+.insideSelectBox {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin: 10px 0px;
+}
+
+.selectBox p {
+    margin: 0px 0px !important;
+    font-weight: 500;
+    font-size: 9px;
+}
+
+.bootomPart {
+    display: flex;
+    padding: 15px 10px;
+    justify-content: space-between;
+}
+
+.bootomPart p {
+    font-size: 14px;
+    font-weight: 500;
+    font-style: normal;
+    color: #007F61;
+    opacity: 0.6;
+    font-family: 'Inter', sans-serif;
+    margin: 0px 0px;
+}
+
+.bootomPart h6 {
+    font-size: 14px;
+    font-weight: 500;
+    font-family: 'Inter', sans-serif;
+    margin: 0px 0px;
+}
+
+.addtoCart {
+    padding: 0px 5px;
+    width: 100%;
+}
+
+.addtoCart button {
+    width: 100%;
+    padding: 10px 0px;
+    background: #007F61;
+    border: none;
+    color: #F4FBF9;
+    font-size: 16px;
+    font-family: 600;
+    font-family: 'Inter', sans-serif;
+}
+
+.copyRight {
+    margin: 10px;
+    display: flex;
+    justify-content: end;
+}
+
+.copyRight p {
+    font-size: 12px;
+    font-family: 'Inter', sans-serif;
+    font-weight: 300;
+}
+
+/* radio button css end */
+
+/* media query start */
+@media screen and (max-width:1682px) {
+    .formDiv {
+        width: 32%;
+    }
+}
+
+@media screen and (max-width:1570px) {
+    .formDiv {
+        width: 32%;
+    }
+}
+
+@media screen and (max-width:1310px) {
+    .formDiv {
+        width: 37%;
+    }
+}
+
+@media screen and (max-width:1145px) {
+    .formDiv {
+        width: 42%;
+    }
+}
+
+@media screen and (max-width:1010px) {
+    .formDiv {
+        width: 47%;
+    }
+}
+
+@media screen and (max-width:905px) {
+    .formDiv {
+        width: 57%;
+    }
+}
+
+@media screen and (max-width:748px) {
+    .formDiv {
+        width: 60%;
+    }
+}
+
+@media screen and (max-width:710px) {
+    .formDiv {
+        width: 70%;
+    }
+}
+
+@media screen and (max-width:615px) {
+    .formDiv {
+        /* margin: 0px 100px; */
+        width: 80%;
+    }
+}
+
+@media screen and (max-width:595px) {
+    .formDiv {
+        /* margin: 0px 100px; */
+        width: 95%;
+    }
+}
+
+@media screen and (max-width:420px) {
+    .formDiv {
+        /* margin: 0px 100px; */
+        width: 100%;
+    }
+}
+
+/* media query start */
